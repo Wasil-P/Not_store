@@ -1,4 +1,5 @@
 import tabulate
+import sys
 from datetime import datetime
 from storage.abc import AbstractStorage
 from models.all_models import Tickets, Products, Users, Orders
@@ -138,4 +139,6 @@ class ShopService:
             )
 
     def exit_now(self):
-            print(f"Уважаемый пользователь, спасибо что посетили наш магазин. \n Ждём вас в следующий раз!")
+        print(f"Уважаемый пользователь, спасибо что посетили наш магазин. \n Ждём вас в следующий раз!")
+        sys.exit()
+
